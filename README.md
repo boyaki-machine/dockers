@@ -6,8 +6,6 @@ DockerコンテナでRedmine , Gitlab , jenkinsを構築するためのスクリ
 Mac（High Sierra）での動作しか確認していません。
 docker/docker-composeが動けばLinux環境でも動作するかもしれません。
 
-参考程度ですので過度な期待はしないでください...
-
 ## Redmine
 
 redmineディレクトリに移動し、make.shを実行してください。
