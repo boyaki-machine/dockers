@@ -1,0 +1,8 @@
+FROM redmine:3.4.4
+
+RUN mkdir /usr/src/redmine/inst
+COPY ./data/query.rb /usr/src/redmine/inst/query.rb
+COPY ./data/setup.sh /usr/src/redmine/inst/setup.sh
+RUN chown -R redmine. /usr/src/redmine/inst
+RUN chmod +x /usr/src/redmine/inst/setup.sh
+
