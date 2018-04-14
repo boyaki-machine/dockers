@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  jenkins:
+    image: jenkins:latest
+    restart: always
+    ports:
+      - 18080:8080
+    volumes:
+      - ~/var/jenkins/home:/var/jenkins_home
+
