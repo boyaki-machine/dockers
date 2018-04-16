@@ -14,7 +14,7 @@ git checkout origin/feature/redmine3
 sed -i 's/^gem "nokogiri".*/#&/g' /usr/src/redmine/plugins/redmine_backlogs/Gemfile
 sed -i 's/^.*gem "capybara".*/#&/g' /usr/src/redmine/plugins/redmine_backlogs/Gemfile
 # もとのquery.rbだと、新規チケット作成時にInternalエラーとなってしまうので修正したものと置き換える。
-mv -f /tmp/query.rb /usr/src/redmine/app/models/query.rb
+mv -f /usr/src/redmine/inst/query.rb /usr/src/redmine/app/models/query.rb
 cd /usr/src/redmine
 bundle install --without development test
 rake redmine:plugins:migrate RAILS_ENV="production"
