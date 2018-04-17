@@ -55,7 +55,7 @@ bundle install --without development test
 
 ### slack install ################################################
 cd /usr/src/redmine/plugins
-git clone https://github.com/sciyoshi/redmine-slack.git
+git clone https://github.com/sciyoshi/redmine-slack.git redmine_slack
 cd /usr/src/redmine
 bundle install --without development test
 ##################################################################
