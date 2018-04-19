@@ -3,9 +3,14 @@ version: '3.1'
 services:
   gitlab:
     image: gitlab/gitlab-ce:latest
+    hostname: 127.0.0.1
     restart: always
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        gitlab_rails['gitlab_ssh_host'] = '127.0.0.1:10022'
     ports:
-      - 10081:80
+      - '10081:80'
+      - '10022:22'
     volumes:
       - ~/var/gitlab/etc:/etc/gitlab
       - ~/var/gitlab/opt:/var/opt/gitlab
