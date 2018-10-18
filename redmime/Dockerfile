@@ -1,4 +1,4 @@
-FROM redmine:3.4.4
+FROM redmine:3.4.6
 
 RUN mkdir /usr/src/redmine/inst
 COPY ./data/query.rb /usr/src/redmine/inst/query.rb
