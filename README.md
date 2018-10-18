@@ -12,7 +12,8 @@ redmineディレクトリに移動し、make.shを実行してください。
 
 - Redmine 3.4.4、 MySQL 5.7で構築します。
 - 下記のプラグインを入れています。
-  - backlogs
+  - backlogs (本家からforkされたwyplay/redmine_backlogs)
+    - backlogsの本家リポジトリは余り更新されておらず、3.4.Xでいろいろ不具合が出ます。それらをforkして改修している方々がいましたので使わせてもらいます。
   - wiki extensions
   - redmine dmsf
   - clipboard image paste
@@ -20,7 +21,6 @@ redmineディレクトリに移動し、make.shを実行してください。
   - redmine slack
   - highlightjs
   - knowledgebase
-- backlogs / dmsfがうまく動作せず、バージョンを落としたり、パッチを当てたりしています。
 - 下記を修正する際は、docker-compose.ymlを編集してください。
   - データはベースOSの~/var/redmine配下に保存されます。
   - ポート番号は10080です。
