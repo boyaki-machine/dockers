@@ -10,7 +10,7 @@ docker/docker-composeが動けばLinux環境でも動作するかもしれませ
 
 redmineディレクトリに移動し、make.shを実行してください。
 
-- Redmine 3.4.4、 MySQL 5.7で構築します。
+- Redmine 3.4.6、 MySQL 5.7で構築します。
 - 下記のプラグインを入れています。
   - backlogs (本家からforkされたwyplay/redmine_backlogs)
     - backlogsの本家リポジトリは余り更新されておらず、3.4.Xでいろいろ不具合が出ます。それらをforkして改修している方々がいましたので使わせてもらいます。
