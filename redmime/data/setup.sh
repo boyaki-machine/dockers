@@ -22,6 +22,9 @@ rake redmine:plugins:migrate RAILS_ENV=production
 ### dmsf install #################################################
 cd /usr/src/redmine/plugins
 git clone https://github.com/danmunn/redmine_dmsf.git
+cd /usr/src/redmine/plugins/redmine_dmsf
+# 最新版(1.6.1)を入れると、プロジェクト設定画面でInternal errorになるので古い版にする。
+git checkout v1.6.0
 cd /usr/src/redmine
 bundle install --without development test
 bundle exec rake redmine:plugins:migrate RAILS_ENV=production
